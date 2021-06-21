@@ -42,7 +42,7 @@ header[id='header'] nav ul li a {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin: 4rem;
+    margin: -2rem 4rem;
     opacity: 0.7;
     transition: 1s all;
     background: transparent;
@@ -98,6 +98,8 @@ header[id='header'] nav ul li a {
 .products_listed li {
     position: relative;
     width: 22%;
+    min-width: 200px;
+    max-width: 450px;
     max-height: 350px;
     display: inline-block;
     overflow: hidden;
@@ -173,4 +175,89 @@ header[id='header'] nav ul li a {
 .e_ {
     float: right;
     color: rgb(74, 9, 158);
+}
+.checkout-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    /* z-index: 2; */
+    background:rgb(255, 255, 255);
+    border-top: 1px solid rgb(14, 113, 131);
+    display: flex;
+}
+.checkout-container p {
+    flex-grow: 1;
+    font-weight: 800;
+}
+.checkout-container button {
+    margin-right: 10%;
+    background: rgb(14, 113, 131);
+    border: 1px solid rgb(14, 113, 131);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    cursor: pointer;
+}
+#spacer {
+    min-height: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header[id='header'] {
+        display: block;
+        max-height: 11rem;
+    }
+    header[id='header'] nav ul {
+        margin-left: -2rem;
+    }
+    header[id='header'] h1, header[id='header'] p {
+        display: block;
+    }
+    .shop-sample {
+        max-width: 75%;
+        min-width: 250px;
+    }
+    #next-btn {
+        top: 0;
+        left: 0;
+        margin: 22rem -1rem;
+        min-width: 290px;
+    }
+    .product-list  {
+        margin-left: -2rem;
+    }
+    .product-list li {
+        display: block;
+    }
+    .product-list li button {
+        width: 100px;
+        margin-bottom: 3px;
+    }
+    .btn-selector-search {
+        width: 100px;
+        max-height: 30px;
+    }
+    .products_listed {
+        margin-left: -4rem;
+    }
+   #submit-search {
+        padding: 3px 0.5rem;
+    }
+    .user-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .products_listed li {
+        width: 70%;
+        max-height: 400px;
+    }
+    .products_listed li img {
+        width: 220px;
+        height: 220px;
+    }
 }
