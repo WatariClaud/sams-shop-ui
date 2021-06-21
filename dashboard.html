@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <noscript>
+        <h1>Please enable javascript to continue&hellip;</h1>
+    </noscript>
+    <title>Samuel Githinji | Dashboard</title>
+</head>
+<body id = "body">
+    <div id="container">
+        <header id="header">
+            <h1 id="top-header-text">Dashboard</h1>
+            <nav id="nav-section">
+                <ul>
+                    <li>
+                        <a href="./login.html">Log out</a>
+                    </li>
+                    <li>
+                        <a href="./mycart.html">My cart <span class = "items-total">4</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <p id="bold-header-text"><strong>Welcome Samuel</strong></p>
+            <main id="main-content">
+                <div id="content-intro-search_">
+                    <p>Sort by category</p>
+                </div>
+                <nav id="selection">
+                    <ul class = "product-list">
+                        <li>
+                            <button id="men-selection"  class = "btn-selector active">Men's</button>
+                        </li>
+                        <li>
+                            <button id="women-selection" class = "btn-selector">Women's</button>
+                        </li>
+                        <li>
+                            <button id="kid-selection" class = "btn-selector">Children</button>
+                        </li>
+                        <li>
+                            <div class="search-box">
+                                <input type = "search" id="kid-selection" class = "btn-selector-search" placeholder = "Type your search&hellip;">
+                                <button id = "submit-search">Search</button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <section id="products-container">
+                    <ul class = "products_listed">
+                        <li>
+                            <div class="prod-img">
+                                <img src="./assets/images/sneaker-one.png" alt="Sneaker One" class = "product-image">
+                            </div>
+                            <div class="prod-desc">
+                                <p>Sneaker Converse</p>
+                                <p>KES. 1,000</p>
+                                <p>Remaining: <span>1</span></p>
+                            </div>
+                            <button class = "purchaser">Buy</button>
+                        </li>
+                        <li>
+                            <div class="prod-img">
+                                <img src="./assets/images/sneaker-two.png" alt="Sneaker Two" class = "product-image">
+                            </div>
+                            <div class="prod-desc">
+                                <p>Sneaker Converse</p>
+                                <p>KES. 800</p>
+                                <p>Remaining: <span>2</span></p>
+                            </div>
+                            <button class = "purchaser">Buy</button>
+                        </li>
+                        <li>
+                            <div class="prod-img">
+                                <img src="./assets/images/sneaker-three.png" alt="Sneaker Three" class = "product-image">
+                            </div>
+                            <div class="prod-desc">
+                                <p>Sneaker Converse</p>
+                                <p>KES. 750</p>
+                                <p>Remaining: <span>3</span></p>
+                            </div>
+                            <button class = "purchaser">Buy</button>
+                        </li>
+                        <li>
+                            <div class="prod-img">
+                                <img src="./assets/images/sneaker-four.png" alt="Sneaker Four" class = "product-image">
+                            </div>
+                            <div class="prod-desc">
+                                <p>Sneaker Converse</p>
+                                <p>KES. 830</p>
+                                <p>Remaining: <span>4</span></p>
+                            </div>
+                            <button class = "purchaser">Buy</button>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <footer id="footer">
+
+        </footer>
+    </div>
+    <script>
+        if(window.location.href.includes("?")) window.location.href = window.location.href.split("?")[0];
+    </script>
+</body>
+</html>

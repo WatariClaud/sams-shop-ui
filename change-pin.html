@@ -8,16 +8,19 @@
     <noscript>
         <h1>Please enable javascript to continue&hellip;</h1>
     </noscript>
-    <title>Sams Shop | Login</title>
+    <title>Sams Shop | Change Pin</title>
 </head>
 <body id = "body">
     <div id="container">
         <header id="header">
-            <h1 id="top-header-text">Log in to access your cart and checkout</h1>
+            <h1 id="top-header-text">Change your pin</h1>
             <nav id="nav-section">
                 <ul>
                     <li>
-                        <a href="./signup.html">Create account</a>
+                        <a href="./login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="./signup.html">Sign up</a>
                     </li>
                 </ul>
             </nav>
@@ -25,19 +28,18 @@
         <div id="content">
             <p id="bold-header-text"><strong>Everything shoes, all in one place</strong></p>
             <main id="main-content">
-                <form class = "user-form" action = "./dashboard.html">
+                <form class = "user-form">
                     <div class="input-container">
-                        <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone">
+                        <label for="phone">New pin:</label>
+                        <input type="password" name="phone" id="phone">
                     </div>
                     <div class="input-container">
-                        <label for="pin">Pin:</label>
+                        <label for="pin">Confirm new Pin:</label>
                         <input type="password" name="pin" id="pin">
                     </div>
                     <div class="input-container">
-                        <button id = "login-btn" class = "form-btn">Login</button>
+                        <button id = "login-btn" class = "form-btn">Update</button>
                     </div>
-                    <a href="./change-pin.html" class = "e_">Reset pin</a>
                 </form>
             </main>
         </div>
