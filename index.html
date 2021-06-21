@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <noscript>
+        <h1>Please enable javascript to continue&hellip;</h1>
+    </noscript>
+    <title>Sams Shop</title>
+</head>
+<body id = "body">
+    <div id="container">
+        <header id="header">
+            <h1 id="top-header-text">Welcome to Sam's Shop</h1>
+            <nav id="nav-section">
+                <ul>
+                    <li>
+                        <a href="./login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="./signup.html">Sign up</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <p id="bold-header-text"><strong>Everything shoes, all in one place</strong></p>
+            <main id="main-content">
+                <div id="content-intro">
+                    <p>Browse different categories to find what you like, at cheap prices</p>
+                    <img src="./assets/images/shoes-bg.png" alt="shoes collection" class = "shop-sample">
+                    <button  id ="next-btn"><a href = "./products.html">View all available products&emsp;<strong>&#10095;</strong></a></button>
+                </div>
+            </main>
+        </div>
+        <footer id="footer">
+
+        </footer>
+    </div>
+    <script>
+        const btn = document.querySelector('#next-btn');
+        const redirect = () => {
+            window.location.replace('./products.html');
+        };
+        // btn.addEventListener('click', redirect);
+    </script>
+</body>
+</html>
